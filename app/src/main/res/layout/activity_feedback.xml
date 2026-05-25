@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/bg_main"
+    tools:context=".FeedbackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/ic_media_previous"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBack"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Share Your Feedback"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="We'd love to hear what you think!"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tvSubtitle"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@color/bg_secondary"
+            android:gravity="top"
+            android:hint="Tell us about your experience..."
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/btnSubmitFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/etFeedback"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/accent_primary"
+            android:text="Submit Feedback"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+</ScrollView>

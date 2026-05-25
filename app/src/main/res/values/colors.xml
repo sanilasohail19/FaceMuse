@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main App Theme Colors -->
+    <color name="bg_main">#F6F5F2</color>
+    <color name="bg_secondary">#EBE4D8</color>
+    <color name="accent_primary">#E7C2C9</color>
+    <color name="highlight_soft">#FFFEFE</color>
+    <color name="divider_line">#E0DCD4</color>
+
+    <!-- Refined Warm Typography -->
+    <color name="text_primary">#3E3A39</color>
+    <color name="text_secondary">#7E7471</color>
+    <color name="text_hint">#B3ADA7</color>
+
+    <!-- Soft Status Colors -->
+    <color name="success_green">#99B898</color>
+    <color name="error_red">#E19999</color>
+    <color name="deleteRed">#E19999</color>
+
+    <!-- Interactive & Header Elements (Soft-Theme) -->
+    <color name="button_solid">#C5A3A9</color>
+    <color name="chatbotHeaderStart">#B08890</color>
+    <color name="chatbotHeaderEnd">#D4AFB7</color>
+    
+    <!-- Gradient Mappings (Updated to match Soft-Theme) -->
+    <color name="buttonGradientStart">#C5A3A9</color>
+    <color name="buttonGradientEnd">#D4AFB7</color>
+
+    <!-- Compatibility/Referenced Colors (Softened) -->
+    <color name="primaryPink">#C5A3A9</color>
+    <color name="light_pink">#F3D0D7</color>
+    <color name="textLink">#B08890</color>
+    <color name="textHeading">#3E3A39</color>
+    <color name="editTextBackground">#FFFEFE</color>
+    <color name="editTextBorder">#E0DCD4</color>
+
+    <!-- Base Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#E0E0E0</color>
+
+    <!-- Aliases for Theme -->
+    <color name="colorPrimary">@color/accent_primary</color>
+    <color name="colorPrimaryDark">#B08890</color>
+    <color name="colorAccent">@color/accent_primary</color>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/other_bg"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvVerifyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Verify Phone"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvVerifySubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvVerifyTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="We've sent a 6-digit code to your phone.
+Please enter it below."
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvVerifySubtitle"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@color/bg_secondary"
+        android:gravity="center"
+        android:hint="000000"
+        android:inputType="number"
+        android:letterSpacing="0.5"
+        android:maxLength="6"
+        android:textColor="@color/text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVerifyOtp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/etOtp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_gradient_background"
+        app:backgroundTint="@color/accent_primary"
+        android:text="Verify and Continue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVerifyOtp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pbLoading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Didn't receive code? Resend"
+        android:textColor="@color/accent_primary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    </RelativeLayout>

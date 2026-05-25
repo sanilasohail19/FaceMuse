@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/other_bg"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvPhoneLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Login with Phone"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPhoneLoginSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPhoneLoginTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Enter your phone number to receive an OTP"
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPhoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPhoneLoginSubtitle"
+        android:layout_marginTop="40dp"
+        android:text="Phone Number"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/llPhoneContainer"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/tvPhoneLabel"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spCountryCode"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@color/bg_secondary"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@color/bg_secondary"
+            android:hint="123 456 7890"
+            android:inputType="phone"
+            android:textColor="@color/text_primary"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/llPhoneContainer"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_gradient_background"
+        app:backgroundTint="@color/accent_primary"
+        android:text="Send OTP"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSendOtp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Back to Email Login"
+        android:textColor="@color/accent_primary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

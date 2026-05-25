@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/other_bg"
+    tools:context=".SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Create Account"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Join thousands who trust their skin journey with us"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubtitle"
+            android:layout_marginTop="32dp"
+            android:text="Name"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/tvNameLabel"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@color/bg_secondary"
+            android:drawableStart="@android:drawable/ic_menu_my_calendar"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/accent_primary"
+            android:hint="Your name"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+
+        <TextView
+            android:id="@+id/tvEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etName"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/tvEmailLabel"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@color/bg_secondary"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/accent_primary"
+            android:hint="your@email.com"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+
+        <TextView
+            android:id="@+id/tvPhoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginTop="16dp"
+            android:text="Phone Number"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/llPhoneContainer"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/tvPhoneLabel"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spCountryCode"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background"
+                android:backgroundTint="@color/bg_secondary"
+                android:textColor="@color/text_primary"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/edit_text_background"
+                android:backgroundTint="@color/bg_secondary"
+                android:hint="123 456 7890"
+                android:inputType="phone"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llPhoneContainer"
+            android:layout_marginTop="16dp"
+            android:text="Password"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlPassContainer"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/tvPasswordLabel"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background"
+                android:backgroundTint="@color/bg_secondary"
+                android:drawableStart="@android:drawable/ic_lock_lock"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/accent_primary"
+                android:hint="Create a password"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:paddingStart="20dp"
+                android:paddingEnd="50dp" />
+
+            <ImageView
+                android:id="@+id/ivPassToggle"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_eye_hidden"
+                app:tint="@color/text_secondary" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvConfirmPasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlPassContainer"
+            android:layout_marginTop="16dp"
+            android:text="Confirm Password"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlConfirmPassContainer"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/tvConfirmPasswordLabel"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/etConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background"
+                android:backgroundTint="@color/bg_secondary"
+                android:drawableStart="@android:drawable/ic_lock_lock"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/accent_primary"
+                android:hint="Confirm your password"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:paddingStart="20dp"
+                android:paddingEnd="50dp" />
+
+            <ImageView
+                android:id="@+id/ivConfirmPassToggle"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_eye_hidden"
+                app:tint="@color/text_secondary" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlConfirmPassContainer"
+            android:layout_marginTop="24dp"
+            android:background="@color/highlight_soft"
+            android:drawableStart="@android:drawable/ic_secure"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/text_secondary"
+            android:padding="12dp"
+            android:text="Your privacy is protected. FaceMuse provides guidance only and is not a substitute for medical advice."
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tvPrivacy"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_gradient_background"
+            app:backgroundTint="@color/accent_primary"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCreateAccount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? "
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvLoginLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textColor="@color/accent_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
